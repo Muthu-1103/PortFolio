@@ -1,10 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import phoneIcon from '../../assets/phone.png';
-import whatsappIcon from '../../assets/whatsapp.jpg';
-import Insta from '../../assets/insta.jpg';
-import linked from '../../assets/linkedin.png';
-import emailid from '../../assets/mail.jpeg';
 
 const StyledFooter = styled.footer`
   text-align: center;
@@ -15,8 +10,9 @@ const StyledFooter = styled.footer`
 `;
 
 const Icon = styled.img`
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
+  object-fit:contain;
   margin-right: 10px;
 `;
 
@@ -28,30 +24,29 @@ const SocialLink = styled.a`
   align-items: center;
   gap: 8px;
 `;
-
 const ContactCard = styled.div`
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   color: white;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  justify-items: center;
-  
+  margin-top: 20px;
+
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    flex-direction: column;
   }
 `;
 
-const LeftContent = styled.div`
-  text-align: left;
-`;
 const ContactInfo = styled.div`
   display: flex;
-  flex-direction: column;
-
-  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 `;
-
+const LeftContent = styled.div`
+  text-align:left;
+`;
 const Title = styled.div`
   font-size: 42px;
   text-align: center;
@@ -64,16 +59,6 @@ const Title = styled.div`
   color: ${({ theme }) => theme.text_primary};
 `;
 
-const Desc = styled.div`
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
-    margin-top: 12px;
-  }
-`;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -105,33 +90,32 @@ const Contact = () => {
   return (
     <Container id="contact">
       <Wrapper>
-      <Title>Contact</Title>
-      <Desc>My Contact Details</Desc>
+      <Title>For Contact</Title>
         <StyledFooter>
           <ContactCard>
             <ContactInfo>
               <SocialLink href="https://www.instagram.com/muthu.kumar1103/" target="_blank" rel="noopener noreferrer">
-                <Icon src={Insta} alt="Instagram" />
-                Instagram
+                <Icon src={"https://images.vexels.com/media/users/3/137198/isolated/preview/07f0d7b69ef071571e4ada2f4d6a053a-instagram-icon-colorful.png"} alt="Instagram" />
+               
               </SocialLink>
               <SocialLink href="https://www.linkedin.com/in/muthukumarasamy-s-10b9b5237/" target="_blank" rel="noopener noreferrer">
-                <Icon src={linked} alt="LinkedIn" />
-                LinkedIn
+                <Icon src={"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"} alt="LinkedIn" />
+              
               </SocialLink>
               <SocialLink href="https://wa.me/9003451103" target="_blank" rel="noopener noreferrer">
-                <Icon src={whatsappIcon} alt="WhatsApp" />
-                WhatsApp
+                <Icon src={"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"} alt="WhatsApp" />
+                
               </SocialLink>
             </ContactInfo>
             <LeftContent>
               <ContactInfo>
                 <SocialLink href="tel:9003451103">
-                  <Icon src={phoneIcon} alt="Phone" />
-                  Phone: 9003451103
+                  <Icon src={"https://freesvg.org/img/1527145993.png"} alt="Phone" />
+               
                 </SocialLink>
                 <SocialLink href="https://mail.google.com/mail/?view=cm&fs=1&to=smuthukumarasamy97@gmail.com">
-                  <Icon src={emailid} alt="Email" />
-                  Email: smuthukumarasamy97@gmail.com
+                  <Icon src={"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"} alt="Email" />
+                
                 </SocialLink>
               </ContactInfo>
             </LeftContent>

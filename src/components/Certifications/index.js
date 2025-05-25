@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import ProjectsCard from '../Cards/ProjectsCard'
-import {projects} from '../../data/Constant'
+import React from 'react'
+import styled from 'styled-components'
+import CertificationsCard from '../Cards/CertificationsCard'
+import { certifications} from '../../data/Constant'
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -52,6 +52,7 @@ const Desc = styled.div`
     margin-top: 12px;
   }
 `;
+
 const TimeLineSection = styled.div`
   width: 100%;
   max-width: 1000px;
@@ -65,19 +66,21 @@ const TimeLineSection = styled.div`
         align-items: end;
     }
 `;
-const Projects=()=>{
+
+const Certifications = () => {
   return (
-    <Container id='projects'>
+    <Container id="certifications">
       <Wrapper>
-        <Title>Projects</Title>
-        <Desc>Here are Some of my Projects which I had done during my Engineering Course</Desc>
+        <Title>Certifications</Title>
+        <Desc>My Certifications are as Follows</Desc>
         <TimeLineSection>
-            {projects.map((project, index) => (
-                  <ProjectsCard key={project.id} project={project}/>
+            {certifications.map((certifications, index) => (
+                  <CertificationsCard key={certifications.id} certifications={certifications}/>
             ))}
         </TimeLineSection>
       </Wrapper>
     </Container>
   )
 }
-export default Projects
+
+export default Certifications

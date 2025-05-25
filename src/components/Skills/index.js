@@ -112,7 +112,7 @@ const Skills = () => {
           Skills
         </Title>
         <Desc>
-          Areas in which I have gained Skills in my Past 3 Years from my Engineering
+          Areas in which I have gained Skills from my Engineering Course and from my working Environment
         </Desc>
         <SkillsContainer>
           {skills.map((item,index)=>(

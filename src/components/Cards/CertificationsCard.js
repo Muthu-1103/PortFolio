@@ -75,14 +75,6 @@ margin-top: 10px;
   height: 40px;
 }
 `;
-const Degree = styled.div`
-    font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`;
 const Date = styled.div`
     font-size: 12px;
     font-weight: 400;
@@ -91,32 +83,43 @@ const Date = styled.div`
         font-size: 10px;
     }
 `;
-const Grade = styled.div`
-    font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`;
-const EducationCard = ({ education }) => {
+const CertificationsCard = ({ certifications }) => {
     return (
         <Card>
             <Top>
-            <Logo src={education.img} alt='logo'/>
+            <Logo src={certifications.image} alt='logo'/>
                 <Body>
-
-                    <Name>{education.school}</Name>
-                    <Degree>{education.degree}</Degree>
-                    <Date>{education.date}</Date>
+                    <Name>{certifications.name}</Name>
+                    <Date>{certifications.date}</Date>
                 </Body>
             </Top>
-            <Grade><b>Grade: </b>{education.grade}</Grade>
             <Description>
-                <Span>{education.desc}</Span>
-            </Description>
-        </Card>
+  {certifications?.link && (
+    <>
+      <Span>
+        Verify my certificate at{' '}
+        <a
+          href={certifications.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: '#854CE6' }}
+        >
+          {certifications.link}
+        </a>
+      </Span>
+      <br />
+      <Span>
+        Verification Credential:{' '}
+        <Span style={{ color: '#854CE6' }}>
+          ff28eebd8aab444f881f256297856376
+        </Span>
+      </Span>
+    </>
+  )}
+</Description>
+
+           </Card>
     )
 }
 
-export default EducationCard
+export default CertificationsCard

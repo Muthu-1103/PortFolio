@@ -164,7 +164,7 @@ const HeroSection = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = `${process.env.PUBLIC_URL}/Muthukumarasamy_S.pdf`; 
-    link.download = 'Resume.pdf'; 
+    link.download = 'Muthukumarasamy_S_Resume.pdf'; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
