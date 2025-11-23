@@ -258,7 +258,7 @@ export const experiences = [
         ]
     },
     {
-        id: 1,
+        id: 2,
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5uenGe1Kw98r_1lqERAR5uRY7udZD9bPFjQ&s",
         role: "Intern",
         company: "Cognifyz Technologies",
@@ -271,7 +271,7 @@ export const experiences = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFYTOhDW-GdREf0Yjc3N0VoLNyYTxICZP_NMYUq1Q0mi5wLxnw9DoVWqfrTEEZHWcAjo&usqp=CAU",
         role: "Intern",
         company: "Synergy Works",
@@ -284,7 +284,7 @@ export const experiences = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         img: "https://evessio.s3.amazonaws.com/customer/f6ac7efa-3821-45db-b7e9-604a1025db1f/event/d3d85cc9-ac6d-456d-8352-454ef5ba5451/media/309157e4-profile_TCS-logo-1024x768-1-optimized.jpg_Large.webp",
         role: "Intern",
         company: "TCS iON",
