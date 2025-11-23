@@ -226,9 +226,26 @@ export const experiences = [
     {
         id: 0,
         img: "https://www.lucidimaging.in/assets/lucid_logo.jpeg",
+        role: "Software Engineer Trainee",
+        company: "Lucid Imaging Private Limited",
+        date: "Jul 2025-Present",
+        desc: "Software Development Engineer",
+        skills: [
+            "C++",
+            "Image Processing",
+            "Visual C++",
+            "Halcon 24",
+            "Qt",
+            "Threads",
+            "MySQL"
+        ]
+    },
+    {
+        id: 1,
+        img: "https://www.lucidimaging.in/assets/lucid_logo.jpeg",
         role: "Software Engineer Intern",
         company: "Lucid Imaging Private Limited",
-        date: "Jan 2025-Present",
+        date: "Jan 2025-Jul 2025",
         desc: "Software Development Intern",
         skills: [
             "C++",

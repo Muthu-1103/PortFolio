@@ -94,15 +94,15 @@ const Contact = () => {
         <StyledFooter>
           <ContactCard>
             <ContactInfo>
-              <SocialLink href="https://www.instagram.com/muthu.kumar1103/" target="_blank" rel="noopener noreferrer">
+              {/* <SocialLink href="https://www.instagram.com/muthu.kumar1103/" target="_blank" rel="noopener noreferrer">
                 <Icon src={"https://images.vexels.com/media/users/3/137198/isolated/preview/07f0d7b69ef071571e4ada2f4d6a053a-instagram-icon-colorful.png"} alt="Instagram" />
                
-              </SocialLink>
+              </SocialLink> */}
               <SocialLink href="https://www.linkedin.com/in/muthukumarasamy-s-10b9b5237/" target="_blank" rel="noopener noreferrer">
                 <Icon src={"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"} alt="LinkedIn" />
               
               </SocialLink>
-              <SocialLink href="https://wa.me/9003451103" target="_blank" rel="noopener noreferrer">
+              <SocialLink href="https://wa.me/+919003451103" target="_blank" rel="noopener noreferrer">
                 <Icon src={"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"} alt="WhatsApp" />
                 
               </SocialLink>
